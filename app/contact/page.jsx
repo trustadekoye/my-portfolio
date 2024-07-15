@@ -30,6 +30,8 @@ const info = [
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import emailjs from "emailjs-com";
+import { ClipLoader } from "react-spinners";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,6 +40,8 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     setFormData({
@@ -46,18 +50,39 @@ const Contact = () => {
     });
   };
 
+  const validate = () => {
+    const errors = {};
+    if (!formData.fullname.trim())
+      errors.fullname = "At least input something as your name";
+    return errors;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const validationErrors = validate();
+    setErrors(validationErrors);
+    if (Object.keys(validationErrors).length > 0) return;
+
+    // Start loading
+    setLoading(true);
     try {
-      const res = await fetch("/utils/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      if (res.ok) {
-        alert("Message sent successfully");
+      const templateParams = {
+        from_name: formData.fullname,
+        from_email: formData.email,
+        subject: formData.subject,
+        phone: formData.phone,
+        message: formData.message,
+      };
+
+      const result = await emailjs.send(
+        "service_acq0zlb",
+        "template_rpiio3a",
+        templateParams,
+        "xQJnZk4J3sLLy0Aqf"
+      );
+
+      if (result.status === 200) {
+        alert("Your message is on it's way to Mr T. He'd reach you shortly");
         setFormData({
           fullname: "",
           email: "",
@@ -69,7 +94,9 @@ const Contact = () => {
         alert("Failed to send message");
       }
     } catch (error) {
-      alert("Failed to send message");
+      alert("Failed to send message, something went wrong!");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -86,7 +113,10 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+            >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60 text-[15px]">
                 If you would like to get in touch, talk to me about a project
@@ -102,6 +132,9 @@ const Contact = () => {
                   value={formData.fullname}
                   onChange={handleChange}
                 />
+                {errors.fullname && (
+                  <p className="text-red-500 text-sm">{errors.fullname}</p>
+                )}
                 <Input
                   type="email"
                   name="email"
@@ -141,6 +174,7 @@ const Contact = () => {
                   </SelectGroup>
                 </SelectContent>
               </Select>
+
               {/* Textarea */}
               <Textarea
                 className="h-[200px]"
@@ -154,9 +188,13 @@ const Contact = () => {
                 size="md"
                 className="max-w-40 h-[50px]"
                 type="submit"
-                onClick={handleSubmit}
+                disabled={loading}
               >
-                Send message
+                {loading ? (
+                  <ClipLoader size={24} color="ffffff" />
+                ) : (
+                  "Send message"
+                )}
               </Button>
             </form>
           </div>

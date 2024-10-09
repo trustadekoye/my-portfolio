@@ -21,10 +21,11 @@ const Home = () => {
               Hi I'm <br /> <span className="text-accent">Trust Adekoye</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 text-[14px]">
-              I excel at crafting elegant digital experiences My toolbox is
+              I excel at crafting elegant digital experiences. My toolbox is
               packed with an array of programming languages and tech tricks that
-              I wield with finesse. Let's create something extraordinary
-              together!.
+              I wield with finesse.
+              <br />
+              Let's create something extraordinary together!.
             </p>
 
             {/* button and socials */}

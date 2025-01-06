@@ -1,37 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trust Adekoye's Portfolio
 
-## Getting Started
+Welcome to my portfolio! This is where I showcase my projects, skills, and experiences as a software developer.
 
-First, run the development server:
+## About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I am a passionate and dedicated software development with a strong background in web development. I love building innovative and user-friendly applications that solve real-world problems. With a keen eye for detail and a commitment to delivering high-quality code, I strive to create impactful software solutions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Skills
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Programming languages: JavaScript, Python, HTML, CSS
+- Frameworks and libraries: React, Node.js, Django, DjangoRestFramework
+- Databases: PostgreSQL, MySQL
+- Version control: Git, GitHub
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Experience
 
-## Learn More
+- Company Name, Software Engineer (Year - Year)
+  - Description of your role and responsibilities.
+- Company Name, Intern (Year - Year)
+  - Description of your role and responsibilities.
 
-To learn more about Next.js, take a look at the following resources:
+## Education
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- B.Tech, Animal Nutrition and Biotechnology, LAUTECH, Ogbomoso
+- Diploma in Data Science, AltSchool Africa
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact Me
 
-## Deploy on Vercel
+Feel free to reach out to me by visiting my portfolio live and clicking on the contact button.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# my-portfolio
+Thank you for visiting my portfolio!

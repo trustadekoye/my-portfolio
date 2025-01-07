@@ -53,6 +53,16 @@ const projects = [
     live: "http://qwikway.netlify.app",
     github: "",
   },
+  {
+    num: "03",
+    category: "fullstack",
+    title: "project 3",
+    description: "A simple website for a Media & Advertising Agency",
+    stack: [{ name: "Javascript" }, { name: "Css" }, { name: "React js" }],
+    image: "/assets/project-3.png",
+    live: "http://ipublicize.ng",
+    github: "",
+  },
 ];
 
 const Projects = () => {

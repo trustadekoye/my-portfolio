@@ -1,6 +1,6 @@
 # Trust Adekoye's Portfolio
 
-Welcome to my portfolio! This is where I showcase my projects, skills, and experiences as a software developer.
+Welcome to my portfolio! This is where I showcase my projects, skills, and experiences as a Software Developer.
 
 ## About Me
 
@@ -13,13 +13,6 @@ I am a passionate and dedicated software development with a strong background in
 - Databases: PostgreSQL, MySQL
 - Version control: Git, GitHub
 
-## Experience
-
-- Company Name, Software Engineer (Year - Year)
-  - Description of your role and responsibilities.
-- Company Name, Intern (Year - Year)
-  - Description of your role and responsibilities.
-
 ## Education
 
 - B.Tech, Animal Nutrition and Biotechnology, LAUTECH, Ogbomoso
@@ -27,6 +20,6 @@ I am a passionate and dedicated software development with a strong background in
 
 ## Contact Me
 
-Feel free to reach out to me by visiting my portfolio live and clicking on the contact button.
+Feel free to reach out to me by visiting my portfolio (https://trustportfolio.vercel.app) and clicking on the contact button.
 
-Thank you for visiting my portfolio!
+Looking forward to working with you!

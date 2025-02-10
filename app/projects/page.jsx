@@ -34,7 +34,7 @@ const projects = [
       { name: "Node js" },
     ],
     image: "/assets/project-1.png",
-    live: "http://fraudfinder.netlify.app",
+    live: "https://theblacklistdb.netlify.app",
     github: "",
   },
   {

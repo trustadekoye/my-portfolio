@@ -27,14 +27,14 @@ const projects = [
     description:
       "A simple website where users can report their scammers and also see other scammers in the database, safeguarding their online shopping experience",
     stack: [
-      { name: "Javascript" },
-      { name: "Css" },
-      { name: "React js" },
-      { name: "Firebase" },
-      { name: "Node js" },
+      { name: "TypeScript" },
+      { name: "React ts" },
+      { name: "DjangoRestFramework" },
+      { name: "PostgreSQL" },
+      { name: "TailwindCss" },
     ],
     image: "/assets/project-1.png",
-    live: "https://theblacklistdb.netlify.app",
+    live: "https://blacklistdb-frontend.vercel.app/",
     github: "",
   },
   {
@@ -114,30 +114,34 @@ const Projects = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                <Link href={project.live} passHref legacyBehavior>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </a>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                <Link href={project.github} passHref legacyBehavior>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </a>
                 </Link>
               </div>
             </div>

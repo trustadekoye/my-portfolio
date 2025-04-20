@@ -34,8 +34,8 @@ const projects = [
       { name: "TailwindCss" },
     ],
     image: "/assets/project-1.png",
-    live: "https://blacklistdb-frontend.vercel.app/",
-    github: "",
+    live: "https://www.theblacklistdb.com",
+    github: "https://github.com/trustadekoye/blacklistdb-frontend",
   },
   {
     num: "02",
@@ -156,16 +156,16 @@ const Projects = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-gray-500">
                       {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-gradient-to-t from-accent/10 to-transparent z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
-                          alt=""
+                          className="object-contain p-8"
+                          alt={project.title}
                         />
                       </div>
                     </div>

@@ -63,6 +63,23 @@ const projects = [
     live: "http://ipublicize.ng",
     github: "",
   },
+  {
+    num: "04",
+    category: "fullstack",
+    title: "project 4",
+    description:
+      "A webapp where users can practice for their upcoming exams in their organization.",
+    stack: [
+      { name: "Javascript" },
+      { name: "React js" },
+      { name: "Python" },
+      { name: "DjangoRestFramework" },
+      { name: "PostgreSQL" },
+    ],
+    image: "/assets/project-4.png",
+    live: "https://www.speedlearn.com.ng",
+    github: "",
+  },
 ];
 
 const Projects = () => {

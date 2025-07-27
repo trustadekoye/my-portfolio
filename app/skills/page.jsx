@@ -24,7 +24,7 @@ const about = {
 // skills data
 const skills = {
   title: "Skills",
-  description: "Some technolgies I've been working with recently",
+  description: "Some technologies I've been working with recently",
   skilllist: [
     {
       icon: <FaHtml5 />,

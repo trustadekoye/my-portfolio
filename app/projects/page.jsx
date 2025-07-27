@@ -42,7 +42,7 @@ const projects = [
     category: "frontend",
     title: "project 2",
     description:
-      "A frontend page showcasing a delivery/package managemnt system",
+      "A frontend page showcasing a delivery/package management system",
     stack: [
       { name: "Javascript" },
       { name: "Css" },

@@ -20,7 +20,7 @@ const Home = () => {
             <h1 className="h1 mb-6">
               Hi I'm <br /> <span className="text-accent">Trust Adekoye</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80 text-[14px]">
+            <p className="max-w-[600px] mb-9 text-white/80 text-[14px]">
               I excel at crafting elegant digital experiences. My toolbox is
               packed with an array of programming languages and tech tricks that
               I wield with finesse.

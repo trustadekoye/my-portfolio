@@ -14,7 +14,7 @@ const Home = () => {
           className="flex flex-col xl:flex-row items-center justify-between
         xl:pt-8 xl:pb-24"
         >
-          {/* text */}
+          {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-2xs">Software Developer</span>
             <h1 className="h1 mb-6">
@@ -28,7 +28,7 @@ const Home = () => {
               Let's create something extraordinary together!.
             </p>
 
-            {/* button and socials */}
+            {/* Button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a href="/assets/cv/TRUST_ADEKOYE_CV.pdf" download>
                 <Button
@@ -49,7 +49,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* photo */}
+          {/* Photo */}
           <div className="order-1 hidden xl:hidden mb-8 xl:mb-0">
             <Photo />
           </div>

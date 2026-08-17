@@ -16,7 +16,7 @@ const about = {
   title: "Data Scientist || Software Developer",
   description: [
     "Data Scientist during the day, software developer at night, I'm always basically on the computer.",
-    "If you don't find me with my system, then I'm in a basketball court shooting for threes or going up agianst Steph Curry!",
+    "If you don't find me with my system, then I'm in a basketball court shooting for threes or going up against Steph Curry!",
     "I'm a lifelong learner and I'm always looking for new ways to grow and improve my skills.",
   ],
 };
